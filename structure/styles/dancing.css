@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+}
+
+.scene {
+    position: relative;
+    overflow: hidden;
+}
+
+.dancing-image {
+    position: relative;
+    width: 300px;
+    animation: dance 4s ease infinite alternate,rotate 3s linear infinite;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.moving-element {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff5733;
+    border-radius: 50%;
+    animation: moveElement 6s linear infinite;
+}
+
+@keyframes moveElement {
+    0% {
+        left: -50px;
+    }
+    100% {
+        left: calc(100% + 50px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
