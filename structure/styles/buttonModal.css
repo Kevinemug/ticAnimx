@@ -63,3 +63,25 @@ button {
     text-align: center;
 }
 
+/* ... Previous CSS code ... */
+
+#showPopupBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ... Rest of the CSS code ... */
